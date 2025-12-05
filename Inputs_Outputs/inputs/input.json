@@ -1,0 +1,15 @@
+{
+  "user_info": {
+    "name": "Sara",
+    "child_name": "Arad",
+    "age": 29,
+    "pregnancy_status": "pregnant",
+    "pregnancy_week": 27,
+    "child_age": null,
+    "current_situation": "She is in her second trimester and trying to balance remote work with pregnancy.",
+    "challenges": "Lower back pain, fatigue, and stress about upcoming birth.",
+    "goals": "Maintaining a healthy routine, staying calm, and preparing emotionally for meeting her baby.",
+    "emotional_state": "a bit anxious but hopeful",
+    "extra_notes": "First pregnancy; doctor says baby’s growth is normal."
+  }
+}
