@@ -1,0 +1,67 @@
+2025-12-10 09:11:57,894 | INFO | Receiving API key from .env file ...
+2025-12-10 09:11:57,894 | INFO | API key received
+2025-12-10 09:11:58,635 | INFO | Testing OpenAI API connection...
+2025-12-10 09:11:59,495 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 09:11:59,501 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-10 09:11:59,501 | INFO | OpenAI API test successful
+2025-12-10 09:11:59,508 | INFO | Application started successfully.
+2025-12-10 09:11:59,508 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-10 09:12:02,727 | INFO | Received request: POST /input_daily
+2025-12-10 09:12:02,728 | INFO | Rate-limit check passed for /input_daily
+2025-12-10 09:12:02,728 | INFO | Daily file content read successfully. Filename=input.json
+2025-12-10 09:12:02,728 | INFO | JSON validation passed (DailyMotivationInput).
+2025-12-10 09:12:02,728 | INFO | Daily input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/daily_inputs\input2.json
+2025-12-10 09:12:04,524 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 09:12:04,524 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 09:12:04,525 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input2.json
+2025-12-10 09:12:04,525 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output2.json
+2025-12-10 09:12:04,526 | INFO | Input file loaded successfully.
+2025-12-10 09:12:04,526 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 09:12:04,526 | INFO | Preparing to send request to OpenAI API
+2025-12-10 09:12:05,367 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 09:12:05,368 | INFO | Tokens Used: 353
+	Prompt Tokens: 320
+		Prompt Tokens Cached: 0
+	Completion Tokens: 33
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $6.78e-05
+2025-12-10 09:12:05,369 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output2.json
+2025-12-10 09:16:01,045 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 09:16:01,045 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 09:16:01,045 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input2.json
+2025-12-10 09:16:01,045 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output3.json
+2025-12-10 09:16:01,045 | INFO | Input file loaded successfully.
+2025-12-10 09:16:01,045 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 09:16:01,045 | INFO | Preparing to send request to OpenAI API
+2025-12-10 09:16:02,003 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 09:16:02,004 | INFO | Tokens Used: 354
+	Prompt Tokens: 320
+		Prompt Tokens Cached: 0
+	Completion Tokens: 34
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $6.84e-05
+2025-12-10 09:16:02,005 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output3.json
+2025-12-10 09:18:29,922 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 09:18:29,922 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 09:18:29,922 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input2.json
+2025-12-10 09:18:29,922 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output4.json
+2025-12-10 09:18:29,922 | INFO | Input file loaded successfully.
+2025-12-10 09:18:29,923 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 09:18:29,923 | INFO | Preparing to send request to OpenAI API
+2025-12-10 09:18:30,893 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 09:18:30,894 | INFO | Tokens Used: 355
+	Prompt Tokens: 320
+		Prompt Tokens Cached: 0
+	Completion Tokens: 35
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $6.9e-05
+2025-12-10 09:18:30,895 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output4.json

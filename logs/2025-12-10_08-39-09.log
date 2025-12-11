@@ -1,0 +1,35 @@
+2025-12-10 08:39:11,197 | INFO | Receiving API key from .env file ...
+2025-12-10 08:39:11,197 | INFO | API key received
+2025-12-10 08:39:12,025 | INFO | Testing OpenAI API connection...
+2025-12-10 08:39:13,089 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 08:39:13,096 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-10 08:39:13,096 | INFO | OpenAI API test successful
+2025-12-10 08:39:13,105 | INFO | Application started successfully.
+2025-12-10 08:39:13,105 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-10 08:39:14,527 | INFO | Received request: POST /input_daily
+2025-12-10 08:39:14,527 | INFO | Rate-limit check passed for /input_daily
+2025-12-10 08:39:14,527 | INFO | Daily file content read successfully. Filename=input.json
+2025-12-10 08:39:14,527 | INFO | JSON validation passed (DailyMotivationInput).
+2025-12-10 08:39:14,527 | INFO | Daily input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/daily_inputs\input9.json
+2025-12-10 08:39:16,639 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 08:39:16,639 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 08:39:16,639 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input9.json
+2025-12-10 08:39:16,639 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output4.json
+2025-12-10 08:39:16,648 | INFO | Input file loaded successfully.
+2025-12-10 08:39:16,648 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 08:39:16,648 | INFO | Preparing to send request to OpenAI API
+2025-12-10 08:39:17,613 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 08:39:17,616 | INFO | Tokens Used: 331
+	Prompt Tokens: 285
+		Prompt Tokens Cached: 0
+	Completion Tokens: 46
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $7.034999999999999e-05
+2025-12-10 08:39:17,617 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output4.json

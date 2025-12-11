@@ -1,0 +1,138 @@
+2025-12-10 11:42:14,198 | INFO | Receiving API key from .env file ...
+2025-12-10 11:42:14,199 | INFO | API key received
+2025-12-10 11:42:15,035 | INFO | Testing OpenAI API connection...
+2025-12-10 11:42:16,779 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:42:16,785 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-10 11:42:16,785 | INFO | OpenAI API test successful
+2025-12-10 11:42:16,792 | INFO | Application started successfully.
+2025-12-10 11:42:16,793 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-10 11:42:51,029 | INFO | Received request: POST /input
+2025-12-10 11:42:51,030 | INFO | Rate-limit check passed for /input
+2025-12-10 11:42:51,030 | INFO | File content read successfully. Filename=input.json
+2025-12-10 11:42:51,030 | INFO | JSON validation passed (UserMotivationInput).
+2025-12-10 11:42:51,030 | INFO | Input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/inputs\input6.json
+2025-12-10 11:43:15,579 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:43:15,579 | INFO | Rate-limit check passed for /generate
+2025-12-10 11:43:15,579 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/inputs\input6.json
+2025-12-10 11:43:15,579 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/outputs\output6.json
+2025-12-10 11:43:15,587 | INFO | Input file loaded successfully.
+2025-12-10 11:43:15,587 | INFO | Input JSON validated successfully using UserMotivationInputWrapper
+2025-12-10 11:43:15,588 | INFO | Preparing to send request to OpenAI API
+2025-12-10 11:43:17,187 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:43:17,188 | INFO | Tokens Used: 375
+	Prompt Tokens: 327
+		Prompt Tokens Cached: 0
+	Completion Tokens: 48
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $7.785e-05
+2025-12-10 11:43:17,189 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/outputs\output6.json
+2025-12-10 11:43:44,080 | INFO | Received request: POST /input
+2025-12-10 11:43:44,080 | WARNING | Rate limit: must wait 7 seconds before next /input request.
+2025-12-10 11:43:53,047 | INFO | Received request: POST /input
+2025-12-10 11:43:53,047 | INFO | Rate-limit check passed for /input
+2025-12-10 11:43:53,047 | INFO | File content read successfully. Filename=input.json
+2025-12-10 11:43:53,047 | INFO | JSON validation passed (UserMotivationInput).
+2025-12-10 11:43:53,048 | INFO | Input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/inputs\input7.json
+2025-12-10 11:43:55,909 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:43:55,909 | WARNING | Generate request rejected due to delay. Must wait 20 seconds.
+2025-12-10 11:44:05,967 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:44:05,967 | WARNING | Generate request rejected due to delay. Must wait 10 seconds.
+2025-12-10 11:44:12,903 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:44:12,903 | WARNING | Generate request rejected due to delay. Must wait 3 seconds.
+2025-12-10 11:44:18,780 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:44:18,780 | INFO | Rate-limit check passed for /generate
+2025-12-10 11:44:18,780 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/inputs\input7.json
+2025-12-10 11:44:18,780 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/outputs\output7.json
+2025-12-10 11:44:18,789 | INFO | Input file loaded successfully.
+2025-12-10 11:44:18,789 | INFO | Input JSON validated successfully using UserMotivationInputWrapper
+2025-12-10 11:44:18,789 | INFO | Preparing to send request to OpenAI API
+2025-12-10 11:44:20,847 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:44:20,848 | INFO | Tokens Used: 373
+	Prompt Tokens: 326
+		Prompt Tokens Cached: 0
+	Completion Tokens: 47
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $7.709999999999999e-05
+2025-12-10 11:44:20,848 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/outputs\output7.json
+2025-12-10 11:44:50,230 | INFO | Received request: POST /input
+2025-12-10 11:44:50,230 | WARNING | Rate limit: must wait 3 seconds before next /input request.
+2025-12-10 11:44:55,006 | INFO | Received request: POST /input
+2025-12-10 11:44:55,006 | INFO | Rate-limit check passed for /input
+2025-12-10 11:44:55,006 | INFO | File content read successfully. Filename=input.json
+2025-12-10 11:44:55,006 | INFO | JSON validation passed (UserMotivationInput).
+2025-12-10 11:44:55,006 | INFO | Input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/inputs\input8.json
+2025-12-10 11:44:59,363 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:44:59,363 | WARNING | Generate request rejected due to delay. Must wait 20 seconds.
+2025-12-10 11:45:09,338 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:45:09,338 | WARNING | Generate request rejected due to delay. Must wait 10 seconds.
+2025-12-10 11:45:16,364 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:45:16,364 | WARNING | Generate request rejected due to delay. Must wait 3 seconds.
+2025-12-10 11:45:20,927 | INFO | Received request: /generate (generate_json)
+2025-12-10 11:45:20,927 | INFO | Rate-limit check passed for /generate
+2025-12-10 11:45:20,927 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/inputs\input8.json
+2025-12-10 11:45:20,927 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/outputs\output8.json
+2025-12-10 11:45:20,938 | INFO | Input file loaded successfully.
+2025-12-10 11:45:20,938 | INFO | Input JSON validated successfully using UserMotivationInputWrapper
+2025-12-10 11:45:20,938 | INFO | Preparing to send request to OpenAI API
+2025-12-10 11:45:23,131 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:45:23,133 | INFO | Tokens Used: 389
+	Prompt Tokens: 326
+		Prompt Tokens Cached: 0
+	Completion Tokens: 63
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.669999999999999e-05
+2025-12-10 11:45:23,133 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/outputs\output8.json
+2025-12-10 11:46:33,126 | INFO | Received request: POST /input_daily
+2025-12-10 11:46:33,126 | INFO | Rate-limit check passed for /input_daily
+2025-12-10 11:46:33,126 | INFO | Daily file content read successfully. Filename=input.json
+2025-12-10 11:46:33,126 | INFO | JSON validation passed (DailyMotivationInput).
+2025-12-10 11:46:33,127 | INFO | Daily input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/daily_inputs\input3.json
+2025-12-10 11:46:37,155 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:46:37,155 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 11:46:37,155 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input3.json
+2025-12-10 11:46:37,155 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output2.json
+2025-12-10 11:46:37,164 | INFO | Input file loaded successfully.
+2025-12-10 11:46:37,164 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 11:46:37,164 | INFO | Preparing to send request to OpenAI API
+2025-12-10 11:46:38,383 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:46:38,384 | INFO | Tokens Used: 350
+	Prompt Tokens: 320
+		Prompt Tokens Cached: 0
+	Completion Tokens: 30
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $6.599999999999999e-05
+2025-12-10 11:46:38,385 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output2.json
+2025-12-10 11:47:04,005 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:47:04,005 | WARNING | Generate request rejected due to delay. Must wait 34 seconds.
+2025-12-10 11:47:18,588 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:47:18,588 | WARNING | Generate request rejected due to delay. Must wait 19 seconds.
+2025-12-10 11:47:30,209 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:47:30,209 | WARNING | Generate request rejected due to delay. Must wait 7 seconds.
+2025-12-10 11:47:36,358 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:47:36,358 | WARNING | Generate request rejected due to delay. Must wait 1 seconds.
+2025-12-10 11:47:37,884 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 11:47:37,884 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 11:47:37,884 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input3.json
+2025-12-10 11:47:37,884 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output3.json
+2025-12-10 11:47:37,884 | INFO | Input file loaded successfully.
+2025-12-10 11:47:37,884 | INFO | Input JSON validated successfully using DailyMotivationInputWrapper
+2025-12-10 11:47:37,884 | INFO | Preparing to send request to OpenAI API
+2025-12-10 11:47:39,535 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 11:47:39,536 | INFO | Tokens Used: 350
+	Prompt Tokens: 320
+		Prompt Tokens Cached: 0
+	Completion Tokens: 30
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $6.599999999999999e-05
+2025-12-10 11:47:39,536 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/daily_outputs\output3.json

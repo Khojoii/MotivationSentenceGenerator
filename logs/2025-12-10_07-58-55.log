@@ -1,0 +1,32 @@
+2025-12-10 07:58:56,422 | INFO | Receiving API key from .env file ...
+2025-12-10 07:58:56,422 | INFO | API key received
+2025-12-10 07:58:57,189 | INFO | Testing OpenAI API connection...
+2025-12-10 07:58:58,229 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 07:58:58,236 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-10 07:58:58,236 | INFO | OpenAI API test successful
+2025-12-10 07:58:58,243 | INFO | Application started successfully.
+2025-12-10 07:58:58,243 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-10 07:59:01,228 | INFO | Received request: POST /input_daily
+2025-12-10 07:59:01,229 | INFO | Rate-limit check passed for /input_daily
+2025-12-10 07:59:01,229 | INFO | Daily file content read successfully. Filename=input.json
+2025-12-10 07:59:01,229 | ERROR | Daily JSON validation failed: 1 validation error for DailyMotivationInputWrapper
+user_info
+  Field required [type=missing, input_value={'name': 'Lily', 'child_n...hat is going to happen"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-12-10 08:00:15,816 | INFO | Received request: POST /input_daily
+2025-12-10 08:00:15,816 | INFO | Rate-limit check passed for /input_daily
+2025-12-10 08:00:15,816 | INFO | Daily file content read successfully. Filename=input.json
+2025-12-10 08:00:15,816 | INFO | JSON validation passed (DailyMotivationInput).
+2025-12-10 08:00:15,817 | INFO | Daily input JSON saved successfully. Original=input.json | Saved=d:\MotivationGEN\Inputs_Outputs/daily_inputs\input7.json
+2025-12-10 08:00:18,932 | INFO | Received request: /generate_daily (generate_json)
+2025-12-10 08:00:18,932 | INFO | Rate-limit check passed for /generate_daily
+2025-12-10 08:00:18,932 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/daily_inputs\input7.json
+2025-12-10 08:00:18,932 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/daily_outputs\output4.json
+2025-12-10 08:00:18,940 | INFO | Input file loaded successfully.
+2025-12-10 08:00:18,940 | ERROR | Exception in /generate_daily: AttributeError("'dict' object has no attribute 'model_dump'")

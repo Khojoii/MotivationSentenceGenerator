@@ -1,0 +1,28 @@
+2025-12-09 19:50:29,006 | INFO | Receiving API key from .env file ...
+2025-12-09 19:50:29,006 | INFO | API key received
+2025-12-09 19:50:29,806 | INFO | Testing OpenAI API connection...
+2025-12-09 19:50:30,690 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 19:50:30,696 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-09 19:50:30,696 | INFO | OpenAI API test successful
+2025-12-09 19:50:30,701 | INFO | Application started successfully.
+2025-12-09 19:50:30,702 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-09 20:01:32,736 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:01:32,736 | INFO | Rate-limit check passed for /input
+2025-12-09 20:01:32,736 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input6.json
+2025-12-09 20:01:42,009 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:01:42,009 | WARNING | Upload request rejected due to delay. Must wait 51 seconds.
+2025-12-09 20:01:57,911 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:01:57,911 | WARNING | Upload request rejected due to delay. Must wait 35 seconds.
+2025-12-09 20:02:15,244 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:02:15,244 | WARNING | Upload request rejected due to delay. Must wait 18 seconds.
+2025-12-09 20:02:26,551 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:02:26,552 | WARNING | Upload request rejected due to delay. Must wait 7 seconds.
+2025-12-09 20:02:33,981 | INFO | Received request: /input (upload_input_json)
+2025-12-09 20:02:33,981 | INFO | Rate-limit check passed for /input
+2025-12-09 20:02:33,982 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input7.json

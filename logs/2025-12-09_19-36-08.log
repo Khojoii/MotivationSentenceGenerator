@@ -1,0 +1,33 @@
+2025-12-09 19:36:10,048 | INFO | Receiving API key from .env file ...
+2025-12-09 19:36:10,048 | INFO | API key received
+2025-12-09 19:36:10,814 | INFO | Testing OpenAI API connection...
+2025-12-09 19:36:21,938 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 19:36:22,003 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-09 19:36:22,003 | INFO | OpenAI API test successful
+2025-12-09 19:36:22,009 | INFO | Application started successfully.
+2025-12-09 19:36:22,009 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-09 19:36:32,206 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:36:32,206 | INFO | Rate-limit check passed for /input
+2025-12-09 19:36:32,207 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input2.json
+2025-12-09 19:36:36,985 | INFO | Received request: /generate (generate_json)
+2025-12-09 19:36:36,985 | INFO | Rate-limit check passed for /generate
+2025-12-09 19:36:36,985 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/inputs\input2.json
+2025-12-09 19:36:36,985 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/outputs\output3.json
+2025-12-09 19:36:36,986 | INFO | Input file loaded successfully.
+2025-12-09 19:36:36,987 | INFO | Input data successfully validated
+2025-12-09 19:36:36,987 | INFO | Preparing to send request to OpenAI API
+2025-12-09 19:36:39,279 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 19:36:39,283 | INFO | Tokens Used: 346
+	Prompt Tokens: 279
+		Prompt Tokens Cached: 0
+	Completion Tokens: 67
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.205e-05
+2025-12-09 19:36:39,284 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/outputs\output3.json

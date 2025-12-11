@@ -1,0 +1,33 @@
+2025-12-09 19:42:35,089 | INFO | Receiving API key from .env file ...
+2025-12-09 19:42:35,089 | INFO | API key received
+2025-12-09 19:42:35,836 | INFO | Testing OpenAI API connection...
+2025-12-09 19:42:58,260 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 19:42:58,295 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-09 19:42:58,295 | INFO | OpenAI API test successful
+2025-12-09 19:42:58,299 | INFO | Application started successfully.
+2025-12-09 19:42:58,299 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-09 19:44:26,269 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:44:26,269 | INFO | Rate-limit check passed for /input
+2025-12-09 19:44:26,270 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input3.json
+2025-12-09 19:44:44,918 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:44:44,918 | WARNING | Upload request rejected due to delay. Must wait 42 seconds.
+2025-12-09 19:45:06,754 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:45:06,754 | WARNING | Upload request rejected due to delay. Must wait 20 seconds.
+2025-12-09 19:45:19,480 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:45:19,480 | WARNING | Upload request rejected due to delay. Must wait 7 seconds.
+2025-12-09 19:45:20,687 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:45:20,687 | WARNING | Upload request rejected due to delay. Must wait 6 seconds.
+2025-12-09 19:45:24,149 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:45:24,150 | WARNING | Upload request rejected due to delay. Must wait 3 seconds.
+2025-12-09 19:45:26,935 | INFO | Received request: /input (upload_input_json)
+2025-12-09 19:45:26,935 | INFO | Rate-limit check passed for /input
+2025-12-09 19:45:26,936 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input4.json
+2025-12-09 19:45:41,167 | INFO | Received request: /generate_daily (generate_json)
+2025-12-09 19:45:41,167 | INFO | Rate-limit check passed for /generate_daily
+2025-12-09 19:45:41,168 | ERROR | Exception in /generate_daily: FileNotFoundError(2, 'The system cannot find the path specified')

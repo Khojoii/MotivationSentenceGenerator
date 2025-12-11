@@ -1,0 +1,39 @@
+2025-12-09 08:14:04,105 | INFO | Receiving API key from .env file ...
+2025-12-09 08:14:04,105 | INFO | API key received
+2025-12-09 08:14:04,844 | INFO | Testing OpenAI API connection...
+2025-12-09 08:14:05,682 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 08:14:05,688 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-09 08:14:05,688 | INFO | OpenAI API test successful
+2025-12-09 08:14:05,690 | INFO | Application started successfully.
+2025-12-09 08:14:05,690 | INFO | Starting FastAPI app on *.*.*.* : ****
+2025-12-09 08:15:41,085 | INFO | Received request: /input (upload_input_json)
+2025-12-09 08:15:41,085 | INFO | Rate-limit check passed for /input
+2025-12-09 08:15:41,085 | INFO | File uploaded successfully: original=input.json | saved=d:\MotivationGEN\Inputs_Outputs/inputs\input1.json
+2025-12-09 08:15:57,211 | INFO | Received request: /generate (generate_json)
+2025-12-09 08:15:57,211 | INFO | Rate-limit check passed for /generate
+2025-12-09 08:15:57,211 | INFO | Selected latest input file: d:\MotivationGEN\Inputs_Outputs/inputs\input1.json
+2025-12-09 08:15:57,211 | INFO | Generating output file: d:\MotivationGEN\Inputs_Outputs/outputs\output2.json
+2025-12-09 08:15:57,222 | INFO | Input data successfully validated
+2025-12-09 08:15:57,222 | INFO | Preparing to send request to OpenAI API
+2025-12-09 08:15:59,573 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 08:15:59,574 | INFO | Tokens Used: 364
+	Prompt Tokens: 287
+		Prompt Tokens Cached: 0
+	Completion Tokens: 77
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.925e-05
+2025-12-09 08:15:59,574 | INFO | 
+2025-12-09 08:15:59,575 | INFO | Generation completed. Output saved to d:\MotivationGEN\Inputs_Outputs/outputs\output2.json
+2025-12-09 08:16:01,025 | INFO | Received request: /generate (generate_json)
+2025-12-09 08:16:01,025 | WARNING | Generate request rejected due to delay. Must wait 57 seconds.
+2025-12-09 08:16:02,157 | INFO | Received request: /generate (generate_json)
+2025-12-09 08:16:02,157 | WARNING | Generate request rejected due to delay. Must wait 56 seconds.
+2025-12-09 08:16:02,926 | INFO | Received request: /generate (generate_json)
+2025-12-09 08:16:02,926 | WARNING | Generate request rejected due to delay. Must wait 55 seconds.

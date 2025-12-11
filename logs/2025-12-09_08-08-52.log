@@ -1,0 +1,12 @@
+2025-12-09 08:08:52,314 | INFO | Receiving API key from .env file ...
+2025-12-09 08:08:52,314 | INFO | API key received
+2025-12-09 08:08:53,162 | INFO | Testing OpenAI API connection...
+2025-12-09 08:08:54,192 | INFO | HTTP Request: POST https://api.avalai.ir/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-09 08:08:54,198 | INFO | Tokens Used: 30
+	Prompt Tokens: 20
+		Prompt Tokens Cached: 0
+	Completion Tokens: 10
+		Reasoning Tokens: 0
+Successful Requests: 1
+Total Cost (USD): $8.999999999999999e-06
+2025-12-09 08:08:54,198 | INFO | OpenAI API test successful
