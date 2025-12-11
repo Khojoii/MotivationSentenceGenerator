@@ -16,46 +16,92 @@ This helps mothers feel motivated, supported, and emotionally prepared for pregn
 
 
 ---
-## How It Works
+# How the System Works
 
-1. **Input**  
-   Upload a `.json` file via the `/input` endpoint containing user information. Example fields:  
-   - `name` (mother's name)  
-   - `child_name` (optional, child's name)  
-   - `age` (mother's age)  
-   - `pregnancy_status` (`pregnant`, `postpartum`, `not_pregnant`)  
-   - `pregnancy_week` (if pregnant)  
-   - `child_age` (if postpartum)  
-   - `current_situation`  
-   - `challenges`  
-   - `goals`  
-   - `emotional_state` (optional)  
-   - `extra_notes` (optional)
+There are two input modes:
+1. Daily Motivation Input  
+2. User Motivation Input (includes emotional_state)
 
-2. **Generate Motivation**  
-   Call the `/generate` endpoint to process the uploaded data. analyzes the input and crafts a personalized, heartfelt motivational sentence.e AI
+Each mode has:
+- Its own Pydantic wrapper  
+- Separate upload endpoint  
+- Separate generate endpoint  
+- Independent validation and output saving  
+---
+# 1. Upload Input JSON
 
-3. **Output**  
-   The result is returned as JSON containing:
-   - `motivational_sentence`
+## A) Daily Motivation Input  
+Endpoint:
+POST /input_daily
+
+Example JSON: {"user_info": {
+    
+    "name": "Ava",
+    "child_name": "Tom",
+    "age": 29,
+    "pregnancy_status": "pregnant",
+    "pregnancy_week": 27,
+    "child_age": null,
+    "current_situation": "...",
+    "challenges": "...",
+    "goals": "...",
+    "extra_notes": "..."
+  }
+}
+
+## B) User Motivation Input (includes emotional_state)
+Endpoint:
+POST /input_user
+
+Example: {"user_info": {
+
+    "name": "Maya",
+    "child_name": "Leo",
+    "age": 28,
+    "pregnancy_status": "postpartum",
+    "child_age": 3,
+    "current_situation": "...",
+    "challenges": "...",
+    "goals": "...",
+    "extra_notes": "...",
+    "emotional_state": "Sad"
+  }
+}
 
 ---
+# 2. Generate the Motivational Sentence
+
+## A) Generate Daily Sentence
+GET /generate_daily
+
+## B) Generate User-Specific Sentence
+GET /generate
+
+Output:
+{
+  "motivational_sentence": "..."
+}
+
 
 ## API Endpoints
 
-| Method | Endpoint     | Description |
+| Method | Endpoint    | Description |
 |--------|-------------|-------------|
-| POST   | `/input`    | Upload a `.json` file containing product data. Returns status |
-| GET    | `/generate`  | generate the uploaded text. Returns JSON with Motivational sentence. |
-
+| POST   | `/input`    | Upload a `.json` file containing user information(includes emotional_state) .Returns status |
+| GET    | `/generate` | analyze the uploaded json. Returns JSON with Motivational sentence. |
+| POST   | `/input_daily`| Upload a `.json` file user information. Returns status |
+| GET    | `/generate_daily`| analyze the uploaded json. Returns JSON with Motivational sentence. |
 ---
-## Technologies Used
+# Technology Stack
 
-- **Python 3.11+** – core programming language  
-- **FastAPI** – to serve API endpoints for input and motivational sentence generation  
-- **Pydantic** – validate user input and ensure structured output  
-- **Regex (re)** – clean and normalize AI-generated text  
-- **OpenAI GPT API** – generate personalized, heartfelt motivational sentences
+- Python 3.11+  
+- FastAPI  
+- Pydantic v2  
+- OpenAI GPT Models  
+- Regex utilities  
+- Structured Logging  
+- Automatic file indexing  
+- Rate limiting system  
 
 ---
 
@@ -63,21 +109,31 @@ This helps mothers feel motivated, supported, and emotionally prepared for pregn
 ```
 Motivational sentence generator/
 │
-├── .env                          # Environment variables (API keys, configuration settings)
-├── model.py                      # Core logic that communicates with the API and performs generate
-├── base_model.py                 # Pydantic models for data validation and structured responses
-├── logger.py                     # Central logging system (saves logs with timestamps)
-├── main.py                       # FastAPI application entry point
-├── requirements.txt              # List of Python library
+├── .env                           # Environment variables (API keys, config settings)
+├── main.py                        # FastAPI application entry point
+├── model.py                       # Core logic for AI communication and text generation
+├── prompts.py                     # Prompt templates for motivational sentence generation
+├── logger.py                      # Central logging utility with timestamped logs
+├── file_indexer.py                # Handles input/output file indexing and file management
+├── delay_control.py               # Controls generation delays and rate-limiting
 │
-├── logs/                         # Automatically created folder for log files
+├── logs/                          # Automatically generated log files
 │   └── log_YYYY-MM-DD_HH-MM-SS.log
 │
-├── Inputs_Outputs/               # Input/Output data folder
-    ├── inputs/                   # Input files 
-    │   └── input.json
-    └── outputs/                  # Output files 
-       └── output.json
+├── Inputs_Outputs/
+│   ├── daily_inputs/              # Daily automated or batch input files
+│   ├── daily_outputs/             # Daily output results generated by the system
+│   ├── inputs/                    # User-uploaded or manual input JSON files
+│   └── outputs/                   # Generated motivational sentence outputs
+│
+├── routes/
+│   └── Endpoints.py               # FastAPI endpoint definitions (/input and /generate)
+│
+└── validations/
+    ├── pydantic_base_class.py     # Base Pydantic models for structure and shared fields
+    ├── pydantic_validation.py     # Validation logic for user inputs using Pydantic
+    └── text_cleaner.py            # Regex utilities to clean and normalize AI-generated text
+
 ```
 
 ## How to use 
